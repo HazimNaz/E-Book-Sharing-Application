@@ -20,47 +20,29 @@ class EBookController extends Controller
 
     public function list () {
 
-     /*  class Books{
-        public $title;
-        public $ISBN;
-        public $BookCategory;
-        public $NoPages;
-        
-        function __construct($title,$ISBN,$BookCategory,$NoPages) {
-        $this->title = $title;
-        $this->ISBN = $ISBN;
-        $this->BookCategory = $BookCategory;
-        $this->NoPages = $NoPages;
-        }
-    }
     $Books = array(
     "Book 1" => array(
-        "Title" => "Peter Parker",
-        "ISBN" => "peterparker@mail.com",
-        "Category"=>"",
-        "NoPages"=>"",
+        "Title: " => "Percy Jackson & the Olympians: The Lightning Thief",
+        "ISBN: " => "0-7868-5629-7",
+        "Category: "=>"Action and Fantasy Novel",
+        "NoPages: "=>"377",
     ),
     "Book 2" => array(
-        "Title" => "Peter Parker",
-        "ISBN" => "peterparker@mail.com",
-        "Category"=>"",
-        "NoPages"=>"",
+        "Title: " => "The Mystery of Universe",
+        "ISBN: " => "1465499334",
+        "Category: "=>"Science",
+        "NoPages: "=>"186",
     ),
     "Book 3" => array(
-        "Title" => "Peter Parker",
-        "ISBN" => "peterparker@mail.com",
-        "Category"=>"",
-        "NoPages"=>"",
+        "Title: " => "Hormones, Metabolism and the Benefits of Exercise",
+        "ISBN: " => "978-3-319-72790-5",
+        "Category: "=>"Health",
+        "NoPages: "=>"102",
     ),
    
-);*/
-     return view('subview.list');
+);
+      
+    return view('subview.list', compact('Books'));
    
     }
 }
-
-
- 
- 
-    
-   
